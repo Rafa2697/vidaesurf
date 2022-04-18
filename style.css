@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+
+:root{
+    --cor01: rgb(6, 214, 158);
+    --cor02: #fdd864ff;
+    --cor03: #003352ff;
+    --cor04: rgb(183, 247, 161);
+    --cor05: #0091adff;
+}
+
+* {
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    margin: 0;
+}
+img{
+    width: 150px ;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40px;
+    
+
+
+}
+
+
+nav#menu li {
+    display: inline-block;
+    padding: auto;
+    margin: 10px;
+    transition: 1s;
+    text-decoration:none;
+
+}
+nav#menu a{
+    color: var(--cor03);
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: cursive;
+    
+    
+}
+
+nav#menu a:hover{
+    background-color: rgba(0, 51, 82, 0.221);
+
+    
+}
+
+
+
+
+
+#inicio{
+    margin-top: 0;
+    height: 600px;
+    background-image: url(imagens/fotos/foto-de-fundo.jpg);
+    background-position: right, center ;
+    background-size: cover ;
+    background-attachment: fixed;  
+}
+
+#welcome{
+    line-height: 100px;
+    text-align: center;
+    margin:auto;
+}
+
+#welcome h1{
+    font-size: 40px;
+    margin: none;
+    padding-top: 60px;
+    
+}
+
+#welcome h2{
+    font-size: 30px;
+    color: var(--cor03);
+    background-color: rgba(255, 255, 255, 0.287);
+
+    
+    
+}
+
+
+
+#meio{
+    margin-top: 50px;
+    height: 600px;
+    background-image: url(imagens/fotos/foto-de-fundo.jpg);
+    background-position: right, center ;
+    background-size: cover;
+    color: white;
+    text-align: right;
+    background-attachment: fixed;
+    font-size: 20px;
+}
+
+#meio h1, p{
+    text-align: left;
+    margin-top: 50px;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    
+}
+
+#meio h1{
+    padding-top: 80px;
+}
+
+.meio{
+    margin-top: 0px;
+    height: 600px;
+    background-color:rgba(0, 51, 82, 0.32) ;
+}
+
+
+.container{
+    display: flex;
+    margin: 50px;
+    text-align: justify;
+}
+
+article {
+
+    font-size: 20px;
+    padding: auto;
+    margin: auto;
+    color: var(--cor03);
+}
+
+
+#img01{
+    width: 35%;
+    height:100% ;
+    padding: 1%;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.38);
+    
+    
+}
+
+#img02{
+    width: 50%;
+    height: 400px;
+    margin-right: 50px;
+    float: right;
+    margin-top: 80px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.38)
+    
+}
+
+section#ultima {
+    padding: 20px;
+    margin: auto;
+    color: var(--cor03);
+    font-size: 20px;
+    background-color: #f2f0ec86;
+}
+
+
+
+h1{
+    font-family: 'Alef', sans-serif;
+    color: var(--cor02);
+}
+
+#fotos img{
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    margin-left: 20px;
+    box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.246);
+
+}
+
+/*versão mobile*/
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background:var(--cor03);
+    margin: 8px;
+}
+
+@media (max-width: 999px) {
+    body{
+        overflow-x:hidden;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 40vw;
+        height: 92vh;
+        background-color: rgba(253, 215, 100, 0.883);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translate(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-right: 0;
+        padding: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+
+    }
+    
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+footer {
+    text-align: center;
+    color: var(--cor03);
+    background-color: #F8F7F5;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.085);
+}
+
+footer a{
+    color: var(--cor05);
+    text-decoration: none;
+}
