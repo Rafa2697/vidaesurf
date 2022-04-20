@@ -7,6 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG Vida & Surf</title>
     <link rel="stylesheet" href="style.css">
+
+  <style>
+
+      main{
+          display: flex;
+          align-items: center;
+          justify-content:center ;
+          padding: 30px 10px;
+
+          background-color: rgba(253, 215, 100, 0.94);
+          transition: background 0.4 ease-in;
+      }
+      input[type=radio]{
+          display: none;
+
+      }
+
+      main img{
+          width: 50%;
+          height: 70%;
+          border-radius: 10px;
+          object-fit: cover;
+          display:flex;
+
+          
+      }
+
+
+      .card{
+          position: absolute;
+          width: 60%;
+          height: 100%;
+          left: 0;
+          right: 0;
+          margin: auto;
+          cursor: pointer;
+          transition: transform 0.4s ease;
+      }
+
+      .container{
+          width: 100%;
+          height: 100%;
+          max-width: 600px;
+          max-height: 600px;
+          display: flex;
+          transform-style: preserve-3d;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+
+      }
+
+      .cards{
+          position: relative;
+          width: 100%;
+          height: 100%;
+
+      }
+
+      #item-1:checked ~ .cards #song-3,
+      #item-2:checked ~ .cards #song-1,
+      #item-3:checked ~ .cards #song-2{
+          transform: translateX(-40%) scale(0.8) ;
+          opacity: 0.4;
+          z-index: 0;
+      }
+     
+  </style>
 </head>
 
 <body>
@@ -30,9 +98,55 @@
             </ul>
         </nav>
 
+        
     </header>
+
+    <main>
+        <div id="cont" class="container"></div>
+        <input type="radio" name="slider" id="item1" checked>
+        <input type="radio" name="slider" id="item2">
+        <input type="radio" name="slider" id="item3">
+        <input type="radio" name="slider" id="item4">
+        <input type="radio" name="slider" id="item5">
+        <input type="radio" name="slider" id="item6">
+
+        <div class="cards">
+            <!---->
+            <label for="card" for="item-1" id="song-1"><img src="imagens/fotos/casa_09-300x300.jpg" alt="sede-ong">
+            </label>
+            <label for="card" for="item-2" id="song-1"><img src="imagens/fotos/casa_01-300x300.jpg" alt="sede-ong">
+            </label>
+            <label for="card" for="item-3" id="song-1"><img src="imagens/fotos/casa_03-300x300.jpg" alt="sede-ong">
+            </label>
+            <label for="card" for="item-4" id="song-1"><img src="imagens/fotos/casa_04-300x300.jpg" alt="sede-ong">
+            </label>
+            <label for="card" for="item-5" id="song-1"><img src="imagens/fotos/casa_08-300x300.jpg" alt="sede-ong">
+            </label>
+            <label for="card" for="item-6" id="song-1"><img src="imagens/fotos/casa_07-300x300.jpg" alt="sede-ong">
+            </label>
+            -->
+
+        </div>
+        </div>
+    </main>
+
     
-</body>
+      
+
 <script src="mobile-navbar.js"></script>
-<footer></footer>
+</body>
+
+
+<footer>
+        
+    <p style="display: inline-block; text-align: center;">&copy;Rafael Mattos</p>
+
+    <a href="https://www.facebook.com/profile.php?id=100013359691488" target="_blank">Facebook</a> |
+    
+    <a href="https://github.com/Rafa2697" target="_blank">Github</a> |
+
+    <a href="https://www.linkedin.com/feed/" target="_blank">linkedin<a>
+
+
+</footer>
 </html>
