@@ -118,7 +118,7 @@ nav#menu a:hover{
     background-image: url(imagens/fotos/foto-de-fundo.jpg);
     background-position: right, center ;
     background-size: cover;
-    color: white;
+    
     text-align: right;
     background-attachment: fixed;
     font-size: clamp(0.8rem, 1.6vw, 2rem);
@@ -158,6 +158,15 @@ article {
     padding: auto;
     margin: auto;
     color: var(--cor03);
+    
+}
+
+#art2 p{
+    font-size: clamp(0.8rem, 1.6vw, 2rem);
+    padding: auto;
+    margin: auto;
+    color: white;
+    display: flex;
 }
 
 
@@ -193,6 +202,13 @@ section#ultima {
 h1{
     font-family: 'Alef', sans-serif;
     color: var(--cor02);
+    
+}
+
+p{
+    text-align: justify;
+    line-height: 1.5em;
+    
 }
 
 
@@ -309,3 +325,30 @@ footer a{
     text-decoration: none;
 }
 
+/*css da pagina sede da ong*/
+
+#sectsede h1{
+    text-align: center;
+
+}
+#sectsede {
+    margin: auto;
+    padding-left: 10em;
+    padding-right: 10em;
+    display: flex;
+}
+
+#artisede{
+    position: relative;
+
+}
+
+.listasede{
+    display: flex;
+    
+    
+}
+
+#lista2{
+    margin-left: 30%;
+}
