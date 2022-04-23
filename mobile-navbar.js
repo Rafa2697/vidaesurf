@@ -66,4 +66,21 @@ class MobileNavbar {
 
 
  
+  $(function(){
 
+    $(".slick-carousel").slick({
+      infinite:true,
+      slidesToShow: 3,
+      slidesToScrolls: 1,
+      centerMode: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: $(''),
+      nextArrow: $(''),
+      
+    });
+
+  })
+
+
+  /**/
