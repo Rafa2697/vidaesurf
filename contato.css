@@ -43,3 +43,122 @@ article{
 li img{
     width: 100px;
 }
+
+/*logos redes*/
+
+ul#album-icone li {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    
+    background-color:none;
+    
+    border-radius: 10px;
+
+}
+
+ul#album-icone li span{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, 0.103);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+
+}
+ul#album-icone li:hover {
+    -webkit-transform: scale(1.5);
+}
+
+ul#album-icone li:hover span {
+    opacity: 1;
+    transition: 2s;
+}
+
+ul#album-icone li#icone1 {
+    background: url(imagens/fotos/icone-bazar.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 175px 175px;
+    
+}
+ul#album-icone li#icone1:hover { /*hover efeito ao passar o mouse em cima da imagem*/
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    transition: 1s;
+}
+
+ul#album-icone li#icone2 {
+    background: url(imagens/fotos/Facebook\ logo.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    
+
+}
+ul#album-icone li#icone2:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    transition: 1s;
+}
+
+ul#album-icone li#icone3 {
+    background: url(imagens/fotos/Ícone\ Instagram.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 175px 175px;
+
+}
+ul#album-icone li#icone3:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    transition: 1s;
+}
+
+ul#album-icone li#icone4 {
+    background: url(imagens/fotos/Whatsapp\ Black.png.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 175px 175px;
+    background-color: none;
+}
+ul#album-icone li#icone4:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    transition: 1s;
+}
+
+ul#album-icone li#icone5 {
+    background: url(imagens/fotos/icone-email.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color:none;
+}
+ul#album-icone li#icone5:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    transition: 1s;
+}
+
+ul#album-icone li#icone6 {
+    background: url(imagens/fotos/icone-youtube.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+
+}
+ul#album-icone li#icone6:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    transition: 1s;
+}
+ul#album-icone li#icone7 {
+    background: url(imagens/fotos/incone-linkdein.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+
+}
+
+ul#album-icone li#icone7:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    transition: 1s;
+}
+
