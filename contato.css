@@ -8,10 +8,7 @@
 
 .container img{
     width: 100%;
-    
-   
-    
-    
+     
 }
 
 .center{
@@ -37,7 +34,10 @@ iframe{
 
 article{
     text-align: center;
+}
 
+article a{
+    color: white;
 }
 
 li img{
@@ -81,6 +81,8 @@ ul#album-icone li#icone1 {
 
     
 }
+
+
 ul#album-icone li#icone1:hover { /*hover efeito ao passar o mouse em cima da imagem*/
     background-position: 0px 0px;
     background-size: 100px 100px;
@@ -164,3 +166,14 @@ ul#album-icone li#icone7:hover{
 }
 
 /*logos redes*/
+
+ #logo-ho{
+    width: 30%;
+    float: left;
+    margin-right: 200px;
+
+ }
+ .container1 p{
+     
+    
+ }
