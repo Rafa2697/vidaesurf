@@ -30,6 +30,7 @@ iframe{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
+    
 }
 
 article{
@@ -169,11 +170,16 @@ ul#album-icone li#icone7:hover{
 
  #logo-ho{
     width: 30%;
-    float: left;
+    float: right;
     margin-right: 200px;
 
  }
  .container1 p{
      
     
+ }
+
+ p{
+    text-align: center;
+    font-weight: 800;
  }
