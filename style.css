@@ -265,6 +265,7 @@ p{
 .mobile-menu{
     cursor: pointer;
     display: none;
+    
 }
 
 .mobile-menu div{
@@ -275,15 +276,19 @@ p{
 }
 
 @media (max-width: 999px) {
+    .nav-list{
+        display: none;
+    }
     body{
-        overflow-x:hidden;
+        overflow-x: hidden;
+        
     }
 
     .nav-list{
         position: absolute;
-        top: 8vh;
+        top: 7vh;
         right: 0;
-        width: 40vw;
+        width: 50vh;
         height: 92vh;
         background-color: rgba(253, 215, 100, 0.883);
         flex-direction: column;
@@ -299,12 +304,14 @@ p{
     }
     .mobile-menu{
         display: block;
+        
 
     }
     
 }
 
 .nav-list.active {
+    display: flex;
     transform: translateX(0);
 }
 
