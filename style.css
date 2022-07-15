@@ -83,7 +83,7 @@ nav#menu a:hover{
     margin-top: 0;
     height: 600px;
     background-image: url(imagens/fotos/foto-de-fundo.jpg);
-    background-position: right, center ;
+    background-position: center, center ;
     background-size: cover ;
     background-attachment: fixed;  
 }
@@ -128,7 +128,7 @@ nav#menu a:hover{
     margin-top: 50px;
     height: 600px;
     background-image: url(imagens/fotos/foto-de-fundo.jpg);
-    background-position: right, center ;
+    background-position: center, center ;
     background-size: cover;
     
     text-align: right;
